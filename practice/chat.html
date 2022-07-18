@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Kokoa Clone</title>
+</head>
+<body id="chat-screen">
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+                <i class="fa-solid fa-angle-left fa-2xl"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">nemonemo</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid  fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
+    </header> 
+
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Tuesday, June 30, 2020
+      </div>
+
+      <div class="message-row">
+        <img src="data:image/png;base64,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" alt="">
+        <div class="message-row__content">
+            <span class="message__author">Boss</span>
+            <div class="message__info">
+                <span class="message__bubble">Hey</span>
+                <span class="message__time">21:27</span>
+            </div>
+        </div>
+        
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+            <div class="message__info">
+                <span class="message__bubble">:(</span>
+                <span class="message__time">21:27</span>
+            </div>
+        </div>
+        
+      </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <i class="fa-regular fa-face-smile-wink fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+
+    </form>
+
+    <div id="no-mobile">
+        <span>Your screen is too big </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/0c0f1e6958.js" crossorigin="anonymous"></script>
+</body>
+</html>

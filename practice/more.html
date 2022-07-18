@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid  fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a></span>
+        </div>
+    </header>
+
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl" src="data:image/png;base64,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">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">human</h4>
+                    <h6 class="user-component__subtitle abc">1 234 567 890 <span><i class="fa-regular fa-exclamation"></span></i></h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="fa-regular fa-message fa-2x"></i>
+            </div>
+        </div>
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Calendar</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-regular fa-face-grin-stars"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-paint-roller"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <span>Account</span>
+            </div>
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Kokoa Story</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span><i class="fa-regular fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fa-solid  fa-magnifying-glass fa-2x"></i></a></li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html"><div class="dot"></div><i class="fa-solid fa-ellipsis fa-2x"></i></a></li>
+        </ul>
+    </nav>
+    <div id="no-mobile">
+        <span>Your screen is too big </span>
+    </div>
+    <script src="https://kit.fontawesome.com/0c0f1e6958.js" crossorigin="anonymous"></script>
+</body>
+</html>
